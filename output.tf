@@ -6,6 +6,6 @@ output "vpc_id" {
 #   value = data.aws_availability_zones.avaiable
 # }
 
-# output "aws_subnet" {
-#   value = module.aws_subnet.public
-# }
+output "public_subnet_ids" {
+  value = module.vpc.public_subnet_id 
+}
